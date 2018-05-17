@@ -1,0 +1,35 @@
+{
+    "name": "template-by-regisirala",
+    "version": "0.0.1",
+    "description": "Site pronto apenas substitua o texto e as imagens. Enjoy ;)\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D, \u001b[2~a\u001b[2~penas substitua os textos e as imagens. Enjoy ;)",
+    "main": "gulpfile.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "echo Inicializando Site",
+        "prestart": "echo Pre-Start",
+        "preinstall": "mkdirp src/components/bootstrap/ src/components/font-awesome/",
+        "postinstall": "cp -r node_modules/bootstrap/dist src/components/bootstrap/ && cp -r node_modules/font-awesome/css src/components/font-awesome/ && cp -r node_modules/font-awesome/fonts src/components/font-awesome/"
+    },
+    "keywords": [
+        "regisirala",
+        "template",
+        "site",
+        "pronto",
+        "completo"
+    ],
+    "author": "Régis Irala",
+    "license": "ISC",
+    "dependencies": {
+        "bootstrap": "^4.1.1",
+        "font-awesome": "^4.7.0"
+    },
+    "devDependencies": {
+        "gulp": "^3.9.1",
+        "gulp-htmlmin": "^4.0.0",
+        "gulp-notify": "^3.2.0",
+        "gulp-pug": "^4.0.1",
+        "gulp-sass": "^4.0.1",
+        "gulp-uglify": "^3.0.0",
+        "mkdirp": "^0.5.1"
+    }
+}
