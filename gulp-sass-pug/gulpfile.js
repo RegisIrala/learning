@@ -48,7 +48,7 @@ gulp.task('watcher', function() {
     });
 
     /* Watch */
-    gulp.watch('./src/pug/*', ['pug']);
+    gulp.watch('./src/pug/*.pug', ['pug']);
     gulp.watch('./src/sass/**/*.sass', ['sass']);
     gulp.watch("./src/components/bootstrap/scss/**/*.scss", ['sass']);
     gulp.watch("./src/js/**/*.js", ['js']);
