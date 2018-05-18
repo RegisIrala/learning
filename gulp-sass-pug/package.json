@@ -7,8 +7,8 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "echo Inicializando Site",
         "prestart": "echo Pre-Start",
-        "preinstall": "mkdirp dist/components/bootstrap/ dist/components/font-awesome/",
-        "postinstall": "cp -r node_modules/bootstrap/dist dist/components/bootstrap/ && cp -r node_modules/font-awesome/css dist/components/font-awesome/ && cp -r node_modules/font-awesome/fonts dist/components/font-awesome/"
+        "preinstall": "mkdirp dist/components/bootstrap/ dist/components/font-awesome/ dist/components/jquery/",
+        "postinstall": "cp -r node_modules/bootstrap/dist dist/components/bootstrap/ && cp -r node_modules/font-awesome/css dist/components/font-awesome/ && cp -r node_modules/font-awesome/fonts dist/components/font-awesome/ && cp -r node_modules/jquery/dist dist/components/jquery/"
     },
     "keywords": [
         "regisirala",
@@ -21,7 +21,8 @@
     "license": "ISC",
     "dependencies": {
         "bootstrap": "^4.1.1",
-        "font-awesome": "^4.7.0"
+        "font-awesome": "^4.7.0",
+        "jquery": "^3.3.1"
     },
     "devDependencies": {
         "browser-sync": "^2.24.4",

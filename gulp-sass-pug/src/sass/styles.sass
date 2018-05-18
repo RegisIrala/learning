@@ -1,0 +1,25 @@
+body
+    font-family: 'Open Sans', sans-serif
+    background-color: #000
+
+    ul a:hover
+        color: #FBC02D !important
+
+    nav li
+        text-align: center
+        text-transform: uppercase
+
+    li > a:after
+        content: ''
+        display: block
+        height: 1.5px
+        background: #FBC02D
+        transform: scaleX(0)
+        transition: transform .3s
+
+    li > a:hover:after
+        transform: scaleX(1)
+        transition: transform .3s
+
+    .active a
+        color: #FBC02D !important
