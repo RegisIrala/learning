@@ -7,8 +7,8 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "echo Inicializando Site",
         "prestart": "echo Pre-Start",
-        "preinstall": "mkdirp src/components/bootstrap/ src/components/font-awesome/",
-        "postinstall": "cp -r node_modules/bootstrap/dist src/components/bootstrap/ && cp -r node_modules/font-awesome/css src/components/font-awesome/ && cp -r node_modules/font-awesome/fonts src/components/font-awesome/"
+        "preinstall": "mkdirp dist/components/bootstrap/ dist/components/font-awesome/",
+        "postinstall": "cp -r node_modules/bootstrap/dist dist/components/bootstrap/ && cp -r node_modules/font-awesome/css dist/components/font-awesome/ && cp -r node_modules/font-awesome/fonts dist/components/font-awesome/"
     },
     "keywords": [
         "regisirala",
@@ -24,8 +24,9 @@
         "font-awesome": "^4.7.0"
     },
     "devDependencies": {
+        "browser-sync": "^2.24.4",
         "gulp": "^3.9.1",
-        "gulp-htmlmin": "^4.0.0",
+        "gulp-cli": "^2.0.1",
         "gulp-notify": "^3.2.0",
         "gulp-pug": "^4.0.1",
         "gulp-sass": "^4.0.1",
