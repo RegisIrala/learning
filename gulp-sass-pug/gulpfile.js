@@ -11,6 +11,7 @@ gulp.task('pug', function() {
         .pipe(pug({
             pretty: true
         }))
+        .on('error', notify.onError({ title: 'Error PUG', message: '<%= error.message %>' }))
         .pipe(gulp.dest('./dist/'))
         .pipe(browserSync.stream());
 });
