@@ -1,20 +1,23 @@
-body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: #000; }
-  body ul a:hover {
-    color: #FBC02D !important; }
-  body nav li {
-    text-align: center;
-    text-transform: uppercase; }
-  body li > a:after {
-    content: '';
-    display: block;
-    height: 1.5px;
-    background: #FBC02D;
-    transform: scaleX(0);
-    transition: transform .3s; }
-  body li > a:hover:after {
-    transform: scaleX(1);
-    transition: transform .3s; }
-  body .active a {
-    color: #FBC02D !important; }
+html {
+  width: 100%;
+  height: 100%; }
+  html body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #000; }
+    html body ul a:hover {
+      color: #FBC02D !important; }
+    html body nav li {
+      text-align: center;
+      text-transform: uppercase; }
+    html body li > a:after {
+      content: '';
+      display: block;
+      height: 1.5px;
+      background: #FBC02D;
+      transform: scaleX(0);
+      transition: transform .3s; }
+    html body li > a:hover:after {
+      transform: scaleX(1);
+      transition: transform .3s; }
+    html body .active {
+      color: #FBC02D !important; }

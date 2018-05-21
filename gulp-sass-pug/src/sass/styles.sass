@@ -1,25 +1,31 @@
-body
-    font-family: 'Open Sans', sans-serif
-    background-color: #000
+$corDestaqueTxt: #FBC02D
 
-    ul a:hover
-        color: #FBC02D !important
+html
+    width: 100%
+    height: 100%
 
-    nav li
-        text-align: center
-        text-transform: uppercase
+    body
+        font-family: 'Open Sans', sans-serif
+        background-color: #000
 
-    li > a:after
-        content: ''
-        display: block
-        height: 1.5px
-        background: #FBC02D
-        transform: scaleX(0)
-        transition: transform .3s
+        ul a:hover
+            color: $corDestaqueTxt !important
 
-    li > a:hover:after
-        transform: scaleX(1)
-        transition: transform .3s
+        nav li
+            text-align: center
+            text-transform: uppercase
 
-    .active a
-        color: #FBC02D !important
+        li > a:after
+            content: ''
+            display: block
+            height: 1.5px
+            background: $corDestaqueTxt
+            transform: scaleX(0)
+            transition: transform .3s
+
+        li > a:hover:after
+            transform: scaleX(1)
+            transition: transform .3s
+
+        .active
+            color: $corDestaqueTxt !important

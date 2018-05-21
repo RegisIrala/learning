@@ -1,0 +1,1 @@
+for(var linkClicked=document.getElementsByClassName("nav-link"),numClass=linkClicked.length,i=0;i<numClass;i++)linkClicked[i].addEventListener("click",function(){var e=document.getElementsByClassName("active");e[0].className=e[0].className.replace(" active",""),this.className+=" active"},!1);

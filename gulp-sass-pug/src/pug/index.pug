@@ -2,10 +2,11 @@ doctype html
 html
     head
         meta(charset="utf-8")
-        title Testando Pug
+        title Template by Régis Irala
         link(rel="stylesheet" href="./components/bootstrap/dist/css/bootstrap.min.css")
         link(rel="stylesheet" href="./components/font-awesome/css/font-awesome.min.css")
         link(rel="stylesheet" href="./css/styles.css")
+        link(rel="stylesheet" href="./css/index.css")
     body
         nav.navbar.navbar-expand-md.navbar-dark.bg-dark
             a.navbar-brand(href="http://www.sitesbyirala.hol.es")
@@ -13,8 +14,8 @@ html
                 span.navbar-toggler-icon
             .collapse.navbar-collapse(id="navbarTogglerDemo02")
                 ul.navbar-nav.ml-auto.mt-2.mt-lg-0
-                    li.nav-item.active
-                        a.nav-link(href="#") About
+                    li.nav-item
+                        a.nav-link.active(href="#") About
                             span.sr-only
                     li.nav-item
                         a.nav-link(href="#") Portfolio
@@ -22,5 +23,11 @@ html
                         a.nav-link(href="#") Services
                     li.nav-item
                         a.nav-link(href="#") Contact
+        header#topo
+            div.apresenta
+                h1 Régis { #[span.chaves Irala] }
+                p Desenvolvimento Web que encanta
+
         script(src="./components/jquery/dist/jquery.min.js")
         script(src="./components/bootstrap/dist/js/bootstrap.min.js")
+        script(src="./js/scripts.js")
