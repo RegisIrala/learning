@@ -8,25 +8,59 @@ html
         link(rel="stylesheet" href="./css/styles.css")
         link(rel="stylesheet" href="./css/index.css")
     body
+        header#topo
+            div.apresenta
+                img.logoRI(src="./img/bitmap-branco.png", alt="Logotipo Régis Irala")
+                h1 Régis { #[span.chaves Irala] }
+                p Desenvolvimento Web que encanta
+
         nav.navbar.navbar-expand-md.navbar-dark.bg-dark
             a.navbar-brand(href="http://www.sitesbyirala.hol.es")
+                img.brandRI(src="./img/bitmap-branco.png", alt="Logotipo Régis Irala")
             button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation")
                 span.navbar-toggler-icon
             .collapse.navbar-collapse(id="navbarTogglerDemo02")
                 ul.navbar-nav.ml-auto.mt-2.mt-lg-0
                     li.nav-item
-                        a.nav-link.active(href="#") About
+                        a.nav-link.active(href="#about") About
                             span.sr-only
                     li.nav-item
-                        a.nav-link(href="#") Portfolio
+                        a.nav-link(href="#portfolio") Portfolio
                     li.nav-item
-                        a.nav-link(href="#") Services
+                        a.nav-link(href="#services") Services
                     li.nav-item
-                        a.nav-link(href="#") Contact
-        header#topo
-            div.apresenta
-                h1 Régis { #[span.chaves Irala] }
-                p Desenvolvimento Web que encanta
+                        a.nav-link(href="#contact") Contact
+        .container.my-5
+            h2.text-center#services Services
+            .row.text-center
+                .col-sm-4.col-md-4.col-lg-4
+                    i.fas.fa-desktop.fa-5x(aria-hidden='true')
+                    h4 Desenvolvimento de sites
+                    p.
+                        Placeat, harum iste id excepturi sunt voluptatem rem? Nisi consectetur, impedit eveniet assumenda nobis aut laboriosam minima. Lorem ipsum dolor sit amet
+                    button.btn.btn-outline-primary(href="#") Saiba mais
+                .col-sm-4.col-md-4.col-lg-4
+                    i.fas.fa-mobile.fa-5x(aria-hidden='true')
+                    h4 Desenvolvimento de Aplicativos
+                    p.
+                        Placeat, harum iste id excepturi sunt voluptatem rem? Nisi consectetur, impedit eveniet assumenda nobis aut laboriosam minima. Lorem ipsum dolor sit amet
+                    button.btn.btn-outline-primary(href="#") Saiba mais
+                .col-sm-4.col-md-4.col-lg-4
+                    i.fas.fa-pencil-square-o.fa-5x(aria-hidden='true')
+                    h4 Design atrativo
+                    p.
+                        Placeat, harum iste id excepturi sunt voluptatem rem? Nisi consectetur, impedit eveniet assumenda nobis aut laboriosam minima. Lorem ipsum dolor sit amet
+                    button.btn.btn-outline-primary(href="#") Saiba mais
+        .container.my-5
+            .row#about
+                .col-sm-6.col-md-6.col-lg-6
+                    img(src="./img/home-about.jpg")
+                .col-sm-6.col-md-6.col-lg-6.text-center.justify-content-center
+                    i.fas.fa-mobile.fa-5x(aria-hidden='true')
+                    h2 About
+                    p.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, aliquid sequi architecto error reiciendis atque porro qui ab minima sit expedita provident numquam temporibus, molestiae ea similique illum ad eius
+                    button.btn.btn-outline-primary(href="#") Saiba mais
 
         script(src="./components/jquery/dist/jquery.min.js")
         script(src="./components/bootstrap/dist/js/bootstrap.min.js")

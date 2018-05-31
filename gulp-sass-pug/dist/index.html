@@ -9,23 +9,53 @@
     <link rel="stylesheet" href="./css/index.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark"><a class="navbar-brand" href="http://www.sitesbyirala.hol.es"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-          <li class="nav-item"><a class="nav-link active" href="#">About<span class="sr-only"></span></a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
     <header id="topo">
-      <div class="apresenta">
+      <div class="apresenta"><img class="logoRI" src="./img/bitmap-branco.png" alt="Logotipo Régis Irala">
         <h1>Régis { <span class="chaves">Irala</span> }</h1>
         <p>Desenvolvimento Web que encanta</p>
       </div>
     </header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark"><a class="navbar-brand" href="http://www.sitesbyirala.hol.es"><img class="brandRI" src="./img/bitmap-branco.png" alt="Logotipo Régis Irala"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#about">About<span class="sr-only"></span></a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container my-5">
+      <h2 class="text-center" id="services">Services</h2>
+      <div class="row text-center">
+        <div class="col-sm-4 col-md-4 col-lg-4"><i class="fas fa-desktop fa-5x" aria-hidden="true"></i>
+          <h4>Desenvolvimento de sites</h4>
+          <p>Placeat, harum iste id excepturi sunt voluptatem rem? Nisi consectetur, impedit eveniet assumenda nobis aut laboriosam minima. Lorem ipsum dolor sit amet</p>
+          <button class="btn btn-outline-primary" href="#">Saiba mais</button>
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4"><i class="fas fa-mobile fa-5x" aria-hidden="true"></i>
+          <h4>Desenvolvimento de Aplicativos</h4>
+          <p>Placeat, harum iste id excepturi sunt voluptatem rem? Nisi consectetur, impedit eveniet assumenda nobis aut laboriosam minima. Lorem ipsum dolor sit amet</p>
+          <button class="btn btn-outline-primary" href="#">Saiba mais</button>
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4"><i class="fas fa-pencil-square-o fa-5x" aria-hidden="true"></i>
+          <h4>Design atrativo</h4>
+          <p>Placeat, harum iste id excepturi sunt voluptatem rem? Nisi consectetur, impedit eveniet assumenda nobis aut laboriosam minima. Lorem ipsum dolor sit amet</p>
+          <button class="btn btn-outline-primary" href="#">Saiba mais</button>
+        </div>
+      </div>
+    </div>
+    <div class="container my-5">
+      <div class="row" id="about">
+        <div class="col-sm-6 col-md-6 col-lg-6"><img src="./img/home-about.jpg"></div>
+        <div class="col-sm-6 col-md-6 col-lg-6 text-center justify-content-center"><i class="fas fa-mobile fa-5x" aria-hidden="true"></i>
+          <h2>About</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, aliquid sequi architecto error reiciendis atque porro qui ab minima sit expedita provident numquam temporibus, molestiae ea similique illum ad eius</p>
+          <button class="btn btn-outline-primary" href="#">Saiba mais</button>
+        </div>
+      </div>
+    </div>
     <script src="./components/jquery/dist/jquery.min.js"></script>
     <script src="./components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./js/scripts.js"></script>

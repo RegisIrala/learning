@@ -1,3 +1,5 @@
+@import variables
+
 header
     display: flex
     justify-content: center
@@ -5,22 +7,32 @@ header
     text-align: center
     min-width: 100%
     height: 100vh
-    color: #000
-    background-image: url(../img/home-top-header.jpg)
+    color: #fff
+    background-image: radial-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(../img/home-top-header.jpg)
     background-repeat: no-repeat
     background-position: center center
-    -webkit-background-size: cover
-    -moz-background-size: cover
-    -o-background-size: cover
     background-size: 100% 100%
 
     .apresenta
-        position: relative
         h1
             font-size: 6em
 
             span.chaves
-                color: darken(#FBC02D, 30%)
+                color: darken($corDestaqueTxt, 30%)
+        .logoRI
+            -webkit-filter: drop-shadow(8px 8px 10px $corDestaqueTxt) /* Safari */
+            filter: drop-shadow(8px 8px 10px $corDestaqueTxt)
+            transform: rotate(15deg)
+            transition: filter 2s ease-in-out
+
+nav.navbar
+    position: sticky
+    top: 0
+    z-index: 999
+
+    .brandRI
+        width: 50px
+        height: auto
 
 
 
